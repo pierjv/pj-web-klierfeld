@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="19px" height="30px" viewBox="0 0 19 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>E7E23818-1F33-475A-9D0E-9ABFF7705838</title>
+    <defs>
+        <polygon id="path-1" points="4 0 0.475 3.525 11.925 15 0.475 26.475 4 30 19 15"></polygon>
+    </defs>
+    <g id="web" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="home-v4" transform="translate(-1153.000000, -1317.000000)">
+            <g id="icon/navigation/chevron_right_24px-copy" transform="translate(1153.000000, 1317.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <use id="-↳Color" fill="#28C66F" xlink:href="#path-1"></use>
+            </g>
+        </g>
+    </g>
+</svg>

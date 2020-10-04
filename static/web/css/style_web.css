@@ -1,0 +1,129 @@
+#introduction {
+  width: 100%;
+  position: relative;
+  background-size: cover;
+  padding: 100px 0 0 0;
+}
+
+.rectangle {
+  height: 920px;
+  width: 1440px;
+  opacity: 0.9;
+  background-color: #04242F;
+}
+
+group-3 {
+  height: 37px;
+  width: 284px;
+}
+
+.productos-de-alta-te {
+  height: 78px;
+  width: 652px;
+  color: #FFFFFF;
+  font-family: Montserrat;
+  font-size: 32px;
+  font-weight: 600;
+  letter-spacing: 0;
+  line-height: 39px;
+  text-align: center;
+}
+
+.group-11 {
+  height: 56px;
+  width: 240px;
+}
+
+.inicio {
+  height: 16px;
+  width: 43px;
+  color: #FFFFFF;
+  font-family: Montserrat;
+  font-size: 13px;
+  font-weight: 300;
+  letter-spacing: 0;
+  line-height: 16px;
+}
+
+.nosotros {
+  height: 16px;
+  width: 76px;
+  color: #28C66F;
+  font-family: Montserrat;
+  font-size: 13px;
+  font-weight: 300;
+  letter-spacing: 0;
+  line-height: 16px;
+}
+
+.productos {
+  height: 16px;
+  width: 86px;
+  color: #FFFFFF;
+  font-family: Montserrat;
+  font-size: 13px;
+  font-weight: 300;
+  letter-spacing: 0;
+  line-height: 16px;
+}
+
+.klierfeld-latam2 {
+  height: 30px;
+  width: 235px;
+  color: #FFFFFF;
+  font-family: Montserrat;
+  font-size: 25px;
+  letter-spacing: 0;
+  line-height: NaNpx;
+}
+
+.padre {
+  position: relative;
+}
+.hijo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 30%;
+  width: 50%;
+  margin: -15% 0 0 -25%;
+}
+
+
+#intro .button-main {
+  height: 56px;
+  width: 240px;
+  border-radius: 30px;
+  background-color: #28C66F;
+  color: #ffffff;
+  font-size: 14px;
+  background: linear-gradient(180deg, #2EC572 0.58%, #20B161 44.39%, #15974F 100%);
+  box-shadow: -10px -10px 30px 0 #04242F, 10px 10px 30px 0 #04242F;
+  text-align: center;
+  border-color: #20B161;
+  border-style: solid;
+}
+
+
+
+/*home about*/
+.line {
+  box-sizing: border-box;
+  height: 1px;
+  width: 60px;
+  border: 1px solid #28C66F;
+}
+
+
+#services .button-view {
+  height: 56px;
+  width: 279px;
+  border-radius: 30px;
+  background-color: #28C66F;
+  color: #ffffff;
+  font-size: 14px;
+  background: linear-gradient(180deg, #2EC572 0.58%, #20B161 44.39%, #15974F 100%);
+  border-color: #20B161;
+  border-style: solid;
+  text-align: center;
+}
