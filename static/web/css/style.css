@@ -600,6 +600,29 @@ h6 {
   font-size: 24px;
 }
 
+#about .about-img{
+  padding: 0 15% 0 13%;
+}
+#about .description{
+  color: #2B2C2D;
+  font-size: 13px;
+  font-weight: 300;
+  letter-spacing: 0;
+  line-height: 21px;
+  text-align: center;
+  padding: 0 0 10px 0;
+}
+#about .box-1{
+  padding: 0 14% 0 15%;
+}
+
+#carouselExampleIndicators1 hr{
+    margin: 30px 0 0 0;
+    border-bottom-style: dotted;
+    border: 1.3px dotted #2B2C2D;
+    border-style: none none dotted;
+    background-color: #fff;
+}
 /* Services Section
 --------------------------------*/
 
@@ -1566,6 +1589,62 @@ h6 {
   color: #28C66F;
 }
 
+.products-item-box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.products-item-img{
+  height: 245px;
+  width: 300px;
+}
+
+#products .title{
+  height: 25px;
+  width: 261px;
+  color: #000000;
+  font-size: 21px;
+  font-weight: 600;
+  letter-spacing: 0;
+  line-height: 25px;
+}
+
+#products .description{
+  height: 134px;
+  width: 261px;
+  color: #2B2C2D;
+  font-size: 13px;
+  font-weight: 300;
+  letter-spacing: 0;
+  line-height: 21px;
+}
+
+#products .description-2{
+  width: 247px;
+  color: #2B2C2D;
+  font-size: 13px;
+  font-weight: 300;
+  letter-spacing: 0;
+  margin: 15px 0 15px 0;
+}
+
+#products .description-3{
+  width: 247px;
+  color: #28C66F;
+  font-size: 12px;
+  letter-spacing: 0;
+  margin: 15px 0 15px 0;
+  font-size: 13px;
+}
+
+#products .box-1{
+  padding: 0 0 0 25px;
+}
+
+#products .box-2{
+  padding: 0 15px 0 15px;
+}
 /*Section comments*/
 #comments {
   background: #fff;
@@ -1739,3 +1818,5 @@ padding: 0 0 50px 0;
 #customers .client-single img {
   max-height: 64px;
 }
+
+/*Section products*/
