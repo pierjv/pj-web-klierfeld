@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <title>Klierfeld. Web Admin</title>
@@ -10,18 +11,18 @@
   <!-- Favicons v4.2.1 -->
   <!-- Libraries & Bootstrap CSS File -->
   <link href="{{ url_for('static', filename='web/lib/bootstrap/css/bootstrap.css') }}" rel="stylesheet">
-  
+
   <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">-->
 
   <link href="{{ url_for('static', filename='web/css/style.css') }}" rel="stylesheet">
   <link href="{{ url_for('static', filename='web/css/style_web.css') }}" rel="stylesheet">
-  
+
   <!-- Libraries & Bootstrap JS File -->
   <script src="{{ url_for('static', filename='web/lib/jquery/jquery.min.js') }}"></script>
   <script src="{{ url_for('static', filename='web/lib/bootstrap/js/bootstrap.min.js') }}"></script>
 
-<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>-->
- <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>-->
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>-->
+  <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>-->
 
 </head>
 
@@ -39,9 +40,47 @@
 
       <nav class="main-nav float-right d-none d-lg-block">
         <ul>
-          <li class="active"><a href="#intro">SOLUCIONES</a></li>
-          <li><a href="#about">PRODUCTOS</a></li>
-          <li><a href="#services">NOSOTROS</a></li>
+          <li class="subnav"><a href="#intro">SOLUCIONES</a>
+            <div class="subnav-content" style="margin-left: calc((1350% - 200vw) / 2);">
+              <div style="margin-left: 35%;display: flex;">
+                <div>
+                  <a href="#bring" class="a-subnav">Aged Care</a>
+                  <a href="#deliver" class="a-subnav">Rural Health</a>
+                  <a href="#package"class="a-subnav">Prison Health</a>
+                  <a href="#express" class="a-subnav">Remote Health</a>
+                </div>
+                <div style="padding-left: 5%;">
+                  <a href="#bring" class="a-subnav">Mining, Oil &#038; Gas</a>
+                  <a href="#deliver" class="a-subnav">Rural Health</a>
+                  <a href="#package" class="a-subnav">General Practice</a>
+                  <a href="#express"class="a-subnav">Merchant Navy</a>
+                </div>
+              </div>
+            </div>
+          </li>
+          
+          <li class="subnav"><a  href="#about">PRODUCTOS</a>
+            <div class="subnav-content" style="margin-left: calc((1170% - 200vw) / 2);">
+              <div style="margin-left: 35%;display: flex;">
+                <div>
+                  <a href="#bring" class="a-subnav">General Practice</a>
+                  <a href="#deliver" class="a-subnav">Rural Health</a>
+                  <a href="#package"class="a-subnav">Rural Health</a>
+                  <a href="#express" class="a-subnav">Merchant Navy</a>
+                </div>
+                <div style="padding-left: 5%;">
+                  <a href="#bring" class="a-subnav">Aged Care</a>
+                  <a href="#deliver" class="a-subnav">Rural Health</a>
+                  <a href="#package"class="a-subnav">Prison Health</a>
+                  <a href="#express" class="a-subnav">Remote Health</a>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li class="subnav"><a href="#services">NOSOTROS</a>
+          </li>
+
           <li><a href="#portfolio">CONTACTO</a></li>
           <li class="drop-down"><a href="">|</a>
             <ul>
@@ -52,7 +91,7 @@
           <li><a href="#contact">WHATSAPP</a></li>
         </ul>
       </nav><!-- .main-nav -->
-      
+
     </div>
   </header><!-- #header -->
 
@@ -60,67 +99,73 @@
     Intro Section
   ============================-->
   <section id="intro">
-    <video class="video"  id="bgvid" playsinline autoplay muted loop>
+    <video class="video" id="bgvid" playsinline autoplay muted loop>
       <!-- 
     - Video needs to be muted, since Chrome 66+ will not autoplay video with sound.
     WCAG general accessibility recommendation is that media such as background video play through only once. Loop turned on for the purposes of illustration; if removed, the end of the video will fade in the same way created by pressing the "Pause" button  -->
-    <source src="{{ url_for('static', filename='web/videos/back_ground_home.mp4') }}" type="video/mp4">
-    
+      <source src="{{ url_for('static', filename='web/videos/back_ground_home.mp4') }}" type="video/mp4">
+
     </video>
 
     <div class="container">
 
       <div class="intro-info">
         <h2>PRODUCTOS DE ALTA TECNOLOGÍA PARA CITAS MÉDICAS VIRTUALES</h2>
-      <div class="text-center">
-        <input type="button" class="button-main" value="QUIERO SABER MAS"/>
+        <div class="text-center">
+          <input type="button" class="button-main" value="QUIERO SABER MAS" />
+        </div>
       </div>
-     </div>
 
     </div>
   </section><!-- #intro -->
 
-    <!--==========================
+  <!--==========================
       About Us Section
     ============================-->
-    <section id="about">
-      <div class="container">
-        <header class="section-header">
-          <p>Sobre nosotros</p>
-          <h3>SOMOS INNOVACIÓN MÉDICA</h3>
-          <hr color="#28C66F"/>
-        </header>
+  <section id="about">
+    <div class="container">
+      <header class="section-header">
+        <p>Sobre nosotros</p>
+        <h3>SOMOS INNOVACIÓN MÉDICA</h3>
+        <hr color="#28C66F" />
+      </header>
 
-        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-          <ol class="carousel-indicators">
-            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-          </ol>
-          <div class="carousel-inner">
-            <div class="carousel-item active" style="justify-content: center;align-items: center;" >
-              <img src="{{ url_for('static', filename='web/img/about_carrusel.png') }}" class="d-block about-img" alt="...">
-              <div class="box-1">
-              <p class="description">Sed venenatis elit pellentesque, pharetra eros nec, mattis libero. Pellentesque pharetra elementum mauris,
-                 vel eleifend lorem viverra in. Nam blandit dolor in consectetur luctus.  </p>
-              </div>
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active" style="justify-content: center;align-items: center;">
+            <img src="{{ url_for('static', filename='web/img/about_carrusel.png') }}" class="d-block about-img"
+              alt="...">
+            <div class="box-1">
+              <p class="description">Sed venenatis elit pellentesque, pharetra eros nec, mattis libero. Pellentesque
+                pharetra elementum mauris,
+                vel eleifend lorem viverra in. Nam blandit dolor in consectetur luctus. </p>
             </div>
-            <div class="carousel-item" style="justify-content: center;align-items: center;" >
-              <img src="{{ url_for('static', filename='web/img/about_carrusel.png') }}" class="d-block about-img" alt="...">
-              <div class="box-1">
-              <p class="description">Sed venenatis elit pellentesque, pharetra eros nec, mattis libero. Pellentesque pharetra elementum mauris,
-                 vel eleifend lorem viverra in. Nam blandit dolor in consectetur luctus.  </p>
-              </div>
+          </div>
+          <div class="carousel-item" style="justify-content: center;align-items: center;">
+            <img src="{{ url_for('static', filename='web/img/about_carrusel.png') }}" class="d-block about-img"
+              alt="...">
+            <div class="box-1">
+              <p class="description">Sed venenatis elit pellentesque, pharetra eros nec, mattis libero. Pellentesque
+                pharetra elementum mauris,
+                vel eleifend lorem viverra in. Nam blandit dolor in consectetur luctus. </p>
             </div>
-            <div class="carousel-item" style="justify-content: center;align-items: center;" >
-              <img src="{{ url_for('static', filename='web/img/about_carrusel.png') }}" class="d-block about-img" alt="...">
-              <div class="box-1">
-              <p class="description">Sed venenatis elit pellentesque, pharetra eros nec, mattis libero. Pellentesque pharetra elementum mauris,
-                 vel eleifend lorem viverra in. Nam blandit dolor in consectetur luctus.  </p>
-              </div>
+          </div>
+          <div class="carousel-item" style="justify-content: center;align-items: center;">
+            <img src="{{ url_for('static', filename='web/img/about_carrusel.png') }}" class="d-block about-img"
+              alt="...">
+            <div class="box-1">
+              <p class="description">Sed venenatis elit pellentesque, pharetra eros nec, mattis libero. Pellentesque
+                pharetra elementum mauris,
+                vel eleifend lorem viverra in. Nam blandit dolor in consectetur luctus. </p>
             </div>
-            
-            <!--<div class="carousel-item">
+          </div>
+
+          <!--<div class="carousel-item">
               <img src="{{ url_for('static', filename='web/img/about_carrusel.png') }}" class="d-block w-100" alt="...">
             </div>
             <div class="carousel-item">
@@ -140,139 +185,145 @@
             <span class="sr-only">Next</span>
           </a>
         </div>
-    
-      </div>
-    </section><!-- #about -->
 
-       <!--==========================
+      </div>
+  </section><!-- #about -->
+
+  <!--==========================
       Services Section
     ============================-->
-    <section id="services" class="section-bg">
-      <div class="container">
+  <section id="services" class="section-bg">
+    <div class="container">
 
 
-        <div class="row">
+      <div class="row">
 
-          <div class="" data-wow-duration="1.4s">
-            <div class="box">
-              <img src="{{ url_for('static', filename='web/img/service_1.svg') }}">
-              <h4 class="title"><a href="">Specialist Telehealth Consultations</a></h4>
-              <p class="description">Pellentesque pharetra elementum mauris, vel.</p>
-             </div>
+        <div class="" data-wow-duration="1.4s">
+          <div class="box">
+            <img src="{{ url_for('static', filename='web/img/service_1.svg') }}">
+            <h4 class="title"><a href="">Specialist Telehealth Consultations</a></h4>
+            <p class="description">Pellentesque pharetra elementum mauris, vel.</p>
           </div>
-          <div class="" data-wow-duration="1.4s">
-            <div class="box">
-              <img src="{{ url_for('static', filename='web/img/service_2.svg') }}">
-              <h4 class="title"><a href="">Electronic Medical Record integration</a></h4>
-              <p class="description">Pellentesque pharetra elementum mauris, vel.</p>
-            </div>
+        </div>
+        <div class="" data-wow-duration="1.4s">
+          <div class="box">
+            <img src="{{ url_for('static', filename='web/img/service_2.svg') }}">
+            <h4 class="title"><a href="">Electronic Medical Record integration</a></h4>
+            <p class="description">Pellentesque pharetra elementum mauris, vel.</p>
           </div>
-
-          <div class="" data-wow-delay="0.1s" data-wow-duration="1.4s">
-            <div class="box">
-              <img src="{{ url_for('static', filename='web/img/service_3.svg') }}">
-              <h4 class="title"><a href="">Electronic Medical Record integration</a></h4>
-              <p class="description">Pellentesque pharetra elementum mauris, vel.</p>
-            </div>
-          </div>
-          <div class="" data-wow-delay="0.1s" data-wow-duration="1.4s">
-            <div class="box">
-              <img src="{{ url_for('static', filename='web/img/service_4.svg') }}">
-              <h4 class="title"><a href="">Clinical Examinations</a></h4>
-              <p class="description">Pellentesque pharetra elementum mauris, vel.</p>
-            </div>
-          </div>
-          
-
         </div>
 
-        <div class="row-2">
-          <div class="services-info">
-            <h2 >¿POR QUÉ ESCOGER<br> NUESTROS PRODUCTOS?</h2>
-            <p> Sed venenatis elit pellentesque, pharetra eros nec,
-               mattis libero. Pellentesque pharetra elementum mauris, vel eleifend lorem viverra 
-               in. Nam blandit dolor in consectetur luctus. </p>
-          <div class="text-center">
-            <input type="button" class="button-view" value="DALE UN VISTASO"/>
+        <div class="" data-wow-delay="0.1s" data-wow-duration="1.4s">
+          <div class="box">
+            <img src="{{ url_for('static', filename='web/img/service_3.svg') }}">
+            <h4 class="title"><a href="">Electronic Medical Record integration</a></h4>
+            <p class="description">Pellentesque pharetra elementum mauris, vel.</p>
+          </div>
         </div>
+        <div class="" data-wow-delay="0.1s" data-wow-duration="1.4s">
+          <div class="box">
+            <img src="{{ url_for('static', filename='web/img/service_4.svg') }}">
+            <h4 class="title"><a href="">Clinical Examinations</a></h4>
+            <p class="description">Pellentesque pharetra elementum mauris, vel.</p>
+          </div>
+        </div>
+
+
       </div>
-    </section><!-- #services -->
 
-    <!--==========================
+      <div class="row-2">
+        <div class="services-info">
+          <h2>¿POR QUÉ ESCOGER<br> NUESTROS PRODUCTOS?</h2>
+          <p> Sed venenatis elit pellentesque, pharetra eros nec,
+            mattis libero. Pellentesque pharetra elementum mauris, vel eleifend lorem viverra
+            in. Nam blandit dolor in consectetur luctus. </p>
+          <div class="text-center">
+            <input type="button" class="button-view" value="DALE UN VISTASO" />
+          </div>
+        </div>
+  </section><!-- #services -->
+
+  <!--==========================
       Products  Section
     ============================-->
-    <section id="products">
-      <div class="container">
-        <header class="section-header">
-          <p>Productos</p>
-          <h3>AMPLIA GAMA DE PRODUCTOS</h3>
-          <hr color="#28C66F"/>
-        </header>
-        
-        <div id="carouselExampleIndicators1" class="carousel slide" data-ride="carousel" style="padding: 40px" >
-          <ol class="carousel-indicators">
-            <li data-target="#carouselExampleIndicators1" data-slide-to="0" class="active"></li>
-            <li data-target="#carouselExampleIndicators1" data-slide-to="1"></li>
-            <li data-target="#carouselExampleIndicators1" data-slide-to="2"></li>
-          </ol>
-          <div class="carousel-inner">
+  <section id="products">
+    <div class="container">
+      <header class="section-header">
+        <p>Productos</p>
+        <h3>AMPLIA GAMA DE PRODUCTOS</h3>
+        <hr color="#28C66F" />
+      </header>
 
-            <div class="carousel-item active">
-             <div style="display:flex;justify-content: center;align-items: center;" >
-                <div class="box-1">
-                  <h4 class="title" >ProEX-Mobile</h4>
-                  <p class="description">Sed venenatis elit pellentesque, pharetra eros nec, mattis libero. Pellentesque pharetra
-                    elementum mauris, vel eleifend lorem viverra in. Nam blandit dolor in consectetur luctus. 
-                  </p>
-                </div>
-                <img src="{{ url_for('static', filename='web/img/products/product_1.png') }}" class="d-block products-item-img" alt="...">
-                <div class="box-2">
-                  <h4 class="title" >Caracteristicas</h4>
-                  <p class="description-2">IP54 water/dust rating </p>
-                  <p class="description-2">Tough scratch-resistant Gorilla Glass touch-screen</p>
-                  <p class="description-2">Sunlight readable, high-contrast 11.6″ 16:9 LCD display</p>
-                  <p class="description-3">Ver más especificaciones…</p>
+      <div id="carouselExampleIndicators1" class="carousel slide" data-ride="carousel" style="padding: 40px">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators1" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators1" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators1" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+
+          <div class="carousel-item active">
+            <div style="display:flex;justify-content: center;align-items: center;">
+              <div class="box-1">
+                <h4 class="title">ProEX-Mobile</h4>
+                <p class="description">Sed venenatis elit pellentesque, pharetra eros nec, mattis libero. Pellentesque
+                  pharetra
+                  elementum mauris, vel eleifend lorem viverra in. Nam blandit dolor in consectetur luctus.
+                </p>
               </div>
-             </div>
+              <img src="{{ url_for('static', filename='web/img/products/product_1.png') }}"
+                class="d-block products-item-img" alt="...">
+              <div class="box-2">
+                <h4 class="title">Caracteristicas</h4>
+                <p class="description-2">IP54 water/dust rating </p>
+                <p class="description-2">Tough scratch-resistant Gorilla Glass touch-screen</p>
+                <p class="description-2">Sunlight readable, high-contrast 11.6″ 16:9 LCD display</p>
+                <p class="description-3">Ver más especificaciones…</p>
+              </div>
             </div>
+          </div>
 
-            <div class="carousel-item">
-              <div style="display:flex;justify-content: center;align-items: center;" >
-                 <div class="box-1">
-                   <h4 class="title" >ProEX-Mobile</h4>
-                   <p class="description">Sed venenatis elit pellentesque, pharetra eros nec, mattis libero. Pellentesque pharetra
-                     elementum mauris, vel eleifend lorem viverra in. Nam blandit dolor in consectetur luctus. 
-                   </p>
-                 </div>
-                 <img src="{{ url_for('static', filename='web/img/products/product_1.png') }}" class="d-block products-item-img" alt="...">
-                 <div class="box-2">
-                   <h4 class="title" >Caracteristicas</h4>
-                   <p class="description-2">IP54 water/dust rating </p>
-                   <p class="description-2">Tough scratch-resistant Gorilla Glass touch-screen</p>
-                   <p class="description-2">Sunlight readable, high-contrast 11.6″ 16:9 LCD display</p>
-                   <p class="description-3">Ver más especificaciones…</p>
-               </div>
+          <div class="carousel-item">
+            <div style="display:flex;justify-content: center;align-items: center;">
+              <div class="box-1">
+                <h4 class="title">ProEX-Mobile</h4>
+                <p class="description">Sed venenatis elit pellentesque, pharetra eros nec, mattis libero. Pellentesque
+                  pharetra
+                  elementum mauris, vel eleifend lorem viverra in. Nam blandit dolor in consectetur luctus.
+                </p>
               </div>
-             </div>
-            
-            <div class="carousel-item">
-              <div style="display:flex;justify-content: center;align-items: center;" >
-                 <div class="box-1">
-                   <h4 class="title" >ProEX-Mobile</h4>
-                   <p class="description">Sed venenatis elit pellentesque, pharetra eros nec, mattis libero. Pellentesque pharetra
-                     elementum mauris, vel eleifend lorem viverra in. Nam blandit dolor in consectetur luctus. 
-                   </p>
-                 </div>
-                 <img src="{{ url_for('static', filename='web/img/products/product_1.png') }}" class="d-block products-item-img" alt="...">
-                 <div class="box-2">
-                   <h4 class="title" >Caracteristicas</h4>
-                   <p class="description-2">IP54 water/dust rating </p>
-                   <p class="description-2">Tough scratch-resistant Gorilla Glass touch-screen</p>
-                   <p class="description-2">Sunlight readable, high-contrast 11.6″ 16:9 LCD display</p>
-                   <p class="description-3">Ver más especificaciones…</p>
-               </div>
+              <img src="{{ url_for('static', filename='web/img/products/product_1.png') }}"
+                class="d-block products-item-img" alt="...">
+              <div class="box-2">
+                <h4 class="title">Caracteristicas</h4>
+                <p class="description-2">IP54 water/dust rating </p>
+                <p class="description-2">Tough scratch-resistant Gorilla Glass touch-screen</p>
+                <p class="description-2">Sunlight readable, high-contrast 11.6″ 16:9 LCD display</p>
+                <p class="description-3">Ver más especificaciones…</p>
               </div>
-             </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div style="display:flex;justify-content: center;align-items: center;">
+              <div class="box-1">
+                <h4 class="title">ProEX-Mobile</h4>
+                <p class="description">Sed venenatis elit pellentesque, pharetra eros nec, mattis libero. Pellentesque
+                  pharetra
+                  elementum mauris, vel eleifend lorem viverra in. Nam blandit dolor in consectetur luctus.
+                </p>
+              </div>
+              <img src="{{ url_for('static', filename='web/img/products/product_1.png') }}"
+                class="d-block products-item-img" alt="...">
+              <div class="box-2">
+                <h4 class="title">Caracteristicas</h4>
+                <p class="description-2">IP54 water/dust rating </p>
+                <p class="description-2">Tough scratch-resistant Gorilla Glass touch-screen</p>
+                <p class="description-2">Sunlight readable, high-contrast 11.6″ 16:9 LCD display</p>
+                <p class="description-3">Ver más especificaciones…</p>
+              </div>
+            </div>
+          </div>
 
           <a class="carousel-control-prev" href="#carouselExampleIndicators1" role="button" data-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -283,186 +334,202 @@
             <span class="sr-only">Next</span>
           </a>
         </div>
-    
-        
-      
+
+
+
       </div>
       <hr style="margin: 30px 0 0 0;
       border-bottom-style: dotted;
       border: 1.3px dotted #2B2C2D;
       border-style: none none dotted;
-      background-color: #fff;"/>
-    </section><!-- #products -->
+      background-color: #fff;" />
+  </section><!-- #products -->
 
-    <!--==========================
+  <!--==========================
       Comments  Section
     ============================-->
-    <section id="comments">
-      <div class="container">
-        <header class="section-header">
-          <p>Comentarios</p>
-          <h3>LAS MEJORES OPINIONES</h3>
-          <hr color="#28C66F"/>
-        </header>
+  <section id="comments">
+    <div class="container">
+      <header class="section-header">
+        <p>Comentarios</p>
+        <h3>LAS MEJORES OPINIONES</h3>
+        <hr color="#28C66F" />
+      </header>
 
-        <div class="row">
+      <div class="row">
 
-          <div>
-            <div class="box">
-              <p class="description">Sed venenatis elit pellentesque, pharetra eros nec, mattis libero. 
-                Pellentesque pharetra elementum mauris, vel eleifend lorem viverra in Pellentesque pharetra 
-                elementum mauris, vel eleifend lorem.</p>
-              <div class="people">
-                <img src="{{ url_for('static', filename='web/img/comments/people_1.jpg') }}">
-                <div>
+        <div>
+          <div class="box">
+            <p class="description">Sed venenatis elit pellentesque, pharetra eros nec, mattis libero.
+              Pellentesque pharetra elementum mauris, vel eleifend lorem viverra in Pellentesque pharetra
+              elementum mauris, vel eleifend lorem.</p>
+            <div class="people">
+              <img src="{{ url_for('static', filename='web/img/comments/people_1.jpg') }}">
+              <div>
                 <p class="description-2">Wilmer Steve</p>
                 <p class="description-3">Medico Cirujano</p>
               </div>
-             </div>
-             </div>
+            </div>
           </div>
+        </div>
 
 
-          <div>
-            <div class="box">
-              <p class="description">Sed venenatis elit pellentesque, pharetra eros nec, mattis libero. 
-                Pellentesque pharetra elementum mauris, vel eleifend lorem viverra in Pellentesque pharetra 
-                elementum mauris, vel eleifend lorem.</p>
-              <div class="people">
-                <img src="{{ url_for('static', filename='web/img/comments/people_4.jpeg') }}">
-                <div>
+        <div>
+          <div class="box">
+            <p class="description">Sed venenatis elit pellentesque, pharetra eros nec, mattis libero.
+              Pellentesque pharetra elementum mauris, vel eleifend lorem viverra in Pellentesque pharetra
+              elementum mauris, vel eleifend lorem.</p>
+            <div class="people">
+              <img src="{{ url_for('static', filename='web/img/comments/people_4.jpeg') }}">
+              <div>
                 <p class="description-2">Brus Vargas</p>
                 <p class="description-3">Futolista de Fiorentina</p>
               </div>
-             </div>
-             </div>
+            </div>
           </div>
+        </div>
 
 
-          <div>
-            <div class="box">
-              <p class="description">Sed venenatis elit pellentesque, pharetra eros nec, mattis libero. 
-                Pellentesque pharetra elementum mauris, vel eleifend lorem viverra in Pellentesque pharetra 
-                elementum mauris, vel eleifend lorem.</p>
-              <div class="people">
-                <img src="{{ url_for('static', filename='web/img/comments/people_2.jpg') }}">
-                <div>
+        <div>
+          <div class="box">
+            <p class="description">Sed venenatis elit pellentesque, pharetra eros nec, mattis libero.
+              Pellentesque pharetra elementum mauris, vel eleifend lorem viverra in Pellentesque pharetra
+              elementum mauris, vel eleifend lorem.</p>
+            <div class="people">
+              <img src="{{ url_for('static', filename='web/img/comments/people_2.jpg') }}">
+              <div>
                 <p class="description-2">Wilmer Steve</p>
                 <p class="description-3">Medico Cirujano</p>
               </div>
-             </div>
-             </div>
+            </div>
           </div>
-          
         </div>
-      
+
       </div>
-    </section><!-- #comments -->
+
+    </div>
+  </section><!-- #comments -->
 
 
- <!--==========================
+  <!--==========================
       Accreditations  Section
     ============================-->
-    <section id="accreditations">
-      <div class="container">
-        <header class="section-header">
-          <p>Acreditaciones</p>
-          <h3>NOS RESPALDAN</h3>
-          <hr color="#28C66F"/>
-        </header>
-        
+  <section id="accreditations">
+    <div class="container">
+      <header class="section-header">
+        <p>Acreditaciones</p>
+        <h3>NOS RESPALDAN</h3>
+        <hr color="#28C66F" />
+      </header>
 
-        <div class="row">
 
-          <div class="" data-wow-duration="1.4s">
-            <div class="box">
-              <img src="{{ url_for('static', filename='web/img/accreditations/accreditations_1.png') }}">
-              <p class="description">As seen on Channel 10. The ProEX Telehealth Hub was featured on TEN’s highly popular Australia by Design: Innovations show.</p>
-             </div>
+      <div class="row">
+
+        <div class="" data-wow-duration="1.4s">
+          <div class="box">
+            <img src="{{ url_for('static', filename='web/img/accreditations/accreditations_1.png') }}">
+            <p class="description">As seen on Channel 10. The ProEX Telehealth Hub was featured on TEN’s highly popular
+              Australia by Design: Innovations show.</p>
           </div>
-          <div class="" data-wow-duration="1.4s">
-            <div class="box">
-              <img src="{{ url_for('static', filename='web/img/accreditations/accreditations_2.png') }}">
-              <p class="description">As seen on Channel 10. The ProEX Telehealth Hub was featured on TEN’s highly popular Australia by Design: Innovations show.</p>
-           </div>
-          </div>
-
-          <div class="" data-wow-delay="0.1s" data-wow-duration="1.4s">
-            <div class="box">
-              <img src="{{ url_for('static', filename='web/img/accreditations/accreditations_3.png') }}">
-              <p class="description">As seen on Channel 10. The ProEX Telehealth Hub was featured on TEN’s highly popular Australia by Design: Innovations show.</p>
-            </div>
-          </div> 
         </div>
-        <div class="row">
-          <p class="description-2">Klierfled products are industry-leading medical devices which conform to the most stringent customer 
-                               and regulatory requirements. We maintain a certified ISO 13485 
-                               Quality Management System through a systemic approach to risk and our devices conform to the IEC 60601 
-                               technical standards for the safety and performance of medical electrical equipment</p>
-           </div>
+        <div class="" data-wow-duration="1.4s">
+          <div class="box">
+            <img src="{{ url_for('static', filename='web/img/accreditations/accreditations_2.png') }}">
+            <p class="description">As seen on Channel 10. The ProEX Telehealth Hub was featured on TEN’s highly popular
+              Australia by Design: Innovations show.</p>
+          </div>
+        </div>
+
+        <div class="" data-wow-delay="0.1s" data-wow-duration="1.4s">
+          <div class="box">
+            <img src="{{ url_for('static', filename='web/img/accreditations/accreditations_3.png') }}">
+            <p class="description">As seen on Channel 10. The ProEX Telehealth Hub was featured on TEN’s highly popular
+              Australia by Design: Innovations show.</p>
+          </div>
+        </div>
       </div>
-
-
-
+      <div class="row">
+        <p class="description-2">Klierfled products are industry-leading medical devices which conform to the most
+          stringent customer
+          and regulatory requirements. We maintain a certified ISO 13485
+          Quality Management System through a systemic approach to risk and our devices conform to the IEC 60601
+          technical standards for the safety and performance of medical electrical equipment</p>
       </div>
-    </section><!-- #accreditations -->
+    </div>
 
-     <!--==========================
+
+
+    </div>
+  </section><!-- #accreditations -->
+
+  <!--==========================
       Customers  Section
     ============================-->
-    <section id="customers">
-      <div class="container">
-        <header class="section-header">
-          <p>Clientes</p>
-          <h3>CUENTAN CON NOSOTROS</h3>
-          <hr color="#28C66F"/>
-        </header>
-        
-        <div class="client-slider">
-          <div class="client-single">
-            <img src="{{ url_for('static', filename='web/img/customers/clients_au-antarctic.png') }}"alt="client" data-ll-status="loaded">
-          </div>
-          <div class="client-single">
-            <img src="{{ url_for('static', filename='web/img/customers/clients_NSW-Health.svg') }}"alt="client" data-ll-status="loaded">
-          </div>
-          <div class="client-single">
-            <img src="{{ url_for('static', filename='web/img/customers/clients_WA.png') }}"alt="client" data-ll-status="loaded">
-          </div>
-          <div class="client-single">
-            <img src="{{ url_for('static', filename='web/img/customers/clientsts_qld-gov.png') }}"alt="client" data-ll-status="loaded">
-          </div>
-          <div class="client-single">
-            <img src="{{ url_for('static', filename='web/img/customers/QLD-Gov.jpg') }}"alt="client" data-ll-status="loaded">
-          </div>
-          <div class="client-single">
-            <img src="{{ url_for('static', filename='web/img/customers/SA_gov.png') }}"alt="client" data-ll-status="loaded">
-          </div>
+  <section id="customers">
+    <div class="container">
+      <header class="section-header">
+        <p>Clientes</p>
+        <h3>CUENTAN CON NOSOTROS</h3>
+        <hr color="#28C66F" />
+      </header>
 
-          <div class="client-single">
-            <img src="{{ url_for('static', filename='web/img/customers/2_clients_shell.png') }}"alt="client" data-ll-status="loaded">
-          </div>
-          <div class="client-single">
-            <img src="{{ url_for('static', filename='web/img/customers/2_ExcellentCare2.jpg') }}"alt="client" data-ll-status="loaded">
-          </div>
-          <div class="client-single">
-            <img src="{{ url_for('static', filename='web/img/customers/2_ndigoNorthHealth.jpg') }}"alt="client" data-ll-status="loaded">
-          </div>
-          <div class="client-single">
-            <img src="{{ url_for('static', filename='web/img/customers/2_TMT.jpg') }}"alt="client" data-ll-status="loaded">
-          </div>
-          <div class="client-single">
-            <img src="{{ url_for('static', filename='web/img/customers/2_VivSol.jpg') }}"alt="client" data-ll-status="loaded">
-          </div>
-          <div class="client-single">
-            <img src="{{ url_for('static', filename='web/img/customers/2_YuraYungi2.jpg') }}"alt="client" data-ll-status="loaded">
-          </div>
+      <div class="client-slider">
+        <div class="client-single">
+          <img src="{{ url_for('static', filename='web/img/customers/clients_au-antarctic.png') }}" alt="client"
+            data-ll-status="loaded">
+        </div>
+        <div class="client-single">
+          <img src="{{ url_for('static', filename='web/img/customers/clients_NSW-Health.svg') }}" alt="client"
+            data-ll-status="loaded">
+        </div>
+        <div class="client-single">
+          <img src="{{ url_for('static', filename='web/img/customers/clients_WA.png') }}" alt="client"
+            data-ll-status="loaded">
+        </div>
+        <div class="client-single">
+          <img src="{{ url_for('static', filename='web/img/customers/clientsts_qld-gov.png') }}" alt="client"
+            data-ll-status="loaded">
+        </div>
+        <div class="client-single">
+          <img src="{{ url_for('static', filename='web/img/customers/QLD-Gov.jpg') }}" alt="client"
+            data-ll-status="loaded">
+        </div>
+        <div class="client-single">
+          <img src="{{ url_for('static', filename='web/img/customers/SA_gov.png') }}" alt="client"
+            data-ll-status="loaded">
+        </div>
 
+        <div class="client-single">
+          <img src="{{ url_for('static', filename='web/img/customers/2_clients_shell.png') }}" alt="client"
+            data-ll-status="loaded">
+        </div>
+        <div class="client-single">
+          <img src="{{ url_for('static', filename='web/img/customers/2_ExcellentCare2.jpg') }}" alt="client"
+            data-ll-status="loaded">
+        </div>
+        <div class="client-single">
+          <img src="{{ url_for('static', filename='web/img/customers/2_ndigoNorthHealth.jpg') }}" alt="client"
+            data-ll-status="loaded">
+        </div>
+        <div class="client-single">
+          <img src="{{ url_for('static', filename='web/img/customers/2_TMT.jpg') }}" alt="client"
+            data-ll-status="loaded">
+        </div>
+        <div class="client-single">
+          <img src="{{ url_for('static', filename='web/img/customers/2_VivSol.jpg') }}" alt="client"
+            data-ll-status="loaded">
+        </div>
+        <div class="client-single">
+          <img src="{{ url_for('static', filename='web/img/customers/2_YuraYungi2.jpg') }}" alt="client"
+            data-ll-status="loaded">
         </div>
 
       </div>
-    </section><!-- #customers -->
 
-     <!--==========================
+    </div>
+  </section><!-- #customers -->
+
+  <!--==========================
     Footer
   ============================-->
   <footer id="footer">
@@ -472,13 +539,13 @@
 
           <div class="col-lg-3 col-md-6 footer-info">
             <img src="{{ url_for('static', filename='web/img/logo.svg') }}" alt="">
-         
+
             <div class="social-links">
               <a href="#" class="facebook"></a>
               <a href="#" class="youtube"></a>
               <a href="#" class="twitter"></a>
               <a href="#" class="instagram"></a>
-           
+
             </div>
 
           </div>
@@ -488,7 +555,7 @@
             <p>
               A108 Adam Street <br>
               New York, NY 535022<br>
-               <br>
+              <br>
               <strong>Phone:</strong> +1 5589 55488 55<br>
               <strong>Email:</strong> info@example.com<br>
             </p>
@@ -517,8 +584,9 @@
         </div>
       </div>
     </div>
-    
+
   </footer><!-- #footer -->
 
 </body>
+
 </html>
