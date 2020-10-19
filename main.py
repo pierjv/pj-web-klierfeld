@@ -20,13 +20,13 @@ jwt = JWTManager(app)
 ################################### WEB ADMIN ###################################################
 #################################################################################################
 
-@app.route('/wa_login', methods=['GET'])
-def wa_login():
+@app.route('/index', methods=['GET'])
+def index():
     _error = request.args.get('error')
     if _error is None:
         _error = 0
     print(_error)
-    return render_template('wa_login.html',error = _error)
+    return render_template('inicio.html',error = _error)
 
     
 @app.route('/', methods=['GET'])
@@ -36,6 +36,10 @@ def wa_inicio():
         _error = 0
     print(_error)
     return render_template('inicio.html')
+
+@app.route('/aboutus', methods=['GET'])
+def aboutus():
+    return render_template('aboutus.html')
 
 @app.route('/test', methods=['GET'])
 def wa_test():

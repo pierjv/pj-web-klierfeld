@@ -35,15 +35,18 @@
     <div class="container">
 
       <div class="logo float-left">
-        <a href="#intro" class="scrollto"><img src="{{ url_for('static', filename='web/img/logo.svg') }}" alt=""></a>
+        <a href="{{ url_for('index') }}" class="scrollto"><img src="{{ url_for('static', filename='web/img/logo.svg') }}" alt=""></a>
       </div>
 
       <nav class="main-nav float-right d-none d-lg-block">
-        <ul>
+        <ul style="list-style: none;">
           <li class="subnav"><a href="#intro">SOLUCIONES</a>
-            <div class="subnav-content" style="margin-left: calc((1350% - 200vw) / 2);">
-              <div style="margin-left: 35%;display: flex;">
+            <div class="subnav-content" style="margin-left: -800%;">
+              <div style="margin-left: 42%;display: flex;">
                 <div>
+                  <img class="img-h" src="{{ url_for('static', filename='web/img/header/img_1.jpg') }}" /> </a>
+                </div>
+                <div style="padding-left: 5%;">
                   <a href="#bring" class="a-subnav">Aged Care</a>
                   <a href="#deliver" class="a-subnav">Rural Health</a>
                   <a href="#package"class="a-subnav">Prison Health</a>
@@ -60,9 +63,12 @@
           </li>
           
           <li class="subnav"><a  href="#about">PRODUCTOS</a>
-            <div class="subnav-content" style="margin-left: calc((1170% - 200vw) / 2);">
+            <div class="subnav-content" style="margin-left: -800%;">
               <div style="margin-left: 35%;display: flex;">
                 <div>
+                  <img class="img-h" src="{{ url_for('static', filename='web/img/header/img_2.jpg') }}" /> </a>
+                </div>
+                <div style="padding-left: 5%;">
                   <a href="#bring" class="a-subnav">General Practice</a>
                   <a href="#deliver" class="a-subnav">Rural Health</a>
                   <a href="#package"class="a-subnav">Rural Health</a>
@@ -78,17 +84,19 @@
             </div>
           </li>
 
-          <li class="subnav"><a href="#services">NOSOTROS</a>
+          <li class="subnav"><a href="{{ url_for('aboutus') }}">NOSOTROS</a>
           </li>
 
           <li><a href="#portfolio">CONTACTO</a></li>
-          <li class="drop-down"><a href="">|</a>
+          <li><a href="">|</a></li>
+          <li class="drop-down"><a href=""> <img src="{{ url_for('static', filename='web/img/header/gps.svg') }}" /> </a>
             <ul>
-              <li><a href="#">Aleman</a></li>
-              <li><a href="#">Ingles</a></li>
+              <li><a href="#">LATAM</a></li>
+              <li><a href="#">DEUSTECH</a></li>
+              <li><a href="#">ENGLISH</a></li>
             </ul>
           </li>
-          <li><a href="#contact">WHATSAPP</a></li>
+          <li><a href="#contact"><img src="{{ url_for('static', filename='web/img/header/whatsapp.svg') }}" /> </a></li>
         </ul>
       </nav><!-- .main-nav -->
 
@@ -100,21 +108,19 @@
   ============================-->
   <section id="intro">
     <video class="video" id="bgvid" playsinline autoplay muted loop>
-      <!-- 
-    - Video needs to be muted, since Chrome 66+ will not autoplay video with sound.
-    WCAG general accessibility recommendation is that media such as background video play through only once. Loop turned on for the purposes of illustration; if removed, the end of the video will fade in the same way created by pressing the "Pause" button  -->
       <source src="{{ url_for('static', filename='web/videos/back_ground_home.mp4') }}" type="video/mp4">
-
     </video>
 
     <div class="container">
 
       <div class="intro-info">
-        <h2>PRODUCTOS DE ALTA TECNOLOGÍA PARA CITAS MÉDICAS VIRTUALES</h2>
-        <div class="text-center">
-          <input type="button" class="button-main" value="QUIERO SABER MAS" />
+        <div class="intro-info-font">
+          <h2>PRODUCTOS DE ALTA TECNOLOGÍA PARA CITAS MÉDICAS VIRTUALES</h2>
+          <div class="text-center">
+            <input type="button" class="button-main" value="QUIERO SABER MAS" />
+          </div>
         </div>
-      </div>
+     </div>
 
     </div>
   </section><!-- #intro -->
@@ -138,8 +144,10 @@
         </ol>
         <div class="carousel-inner">
           <div class="carousel-item active" style="justify-content: center;align-items: center;">
-            <img src="{{ url_for('static', filename='web/img/about_carrusel.png') }}" class="d-block about-img"
-              alt="...">
+            <video class="video-about" poster="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/polina.jpg" id="bgvid" playsinline autoplay muted loop>
+            <source src="http://thenewcode.com/assets/videos/polina.mp4" type="video/mp4">
+            
+            </video>
             <div class="box-1">
               <p class="description">Sed venenatis elit pellentesque, pharetra eros nec, mattis libero. Pellentesque
                 pharetra elementum mauris,
@@ -147,8 +155,9 @@
             </div>
           </div>
           <div class="carousel-item" style="justify-content: center;align-items: center;">
-            <img src="{{ url_for('static', filename='web/img/about_carrusel.png') }}" class="d-block about-img"
-              alt="...">
+            <video class="video-about" poster="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/polina.jpg" id="bgvid" playsinline autoplay muted loop>
+              <source src="http://thenewcode.com/assets/videos/polina.mp4" type="video/mp4">
+              </video>
             <div class="box-1">
               <p class="description">Sed venenatis elit pellentesque, pharetra eros nec, mattis libero. Pellentesque
                 pharetra elementum mauris,
@@ -156,8 +165,10 @@
             </div>
           </div>
           <div class="carousel-item" style="justify-content: center;align-items: center;">
-            <img src="{{ url_for('static', filename='web/img/about_carrusel.png') }}" class="d-block about-img"
-              alt="...">
+            <video class="video-about" poster="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/polina.jpg" id="bgvid" playsinline autoplay muted loop>
+              <source src="http://thenewcode.com/assets/videos/polina.mp4" type="video/mp4"> 
+              </video>
+           <!-- <img src="{{ url_for('static', filename='web/img/about_carrusel.png') }}" class="d-block about-img" alt="...">-->
             <div class="box-1">
               <p class="description">Sed venenatis elit pellentesque, pharetra eros nec, mattis libero. Pellentesque
                 pharetra elementum mauris,

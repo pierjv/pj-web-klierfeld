@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Klierfeld. Web Admin</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <!-- Favicons v4.2.1 -->
+  <!-- Libraries & Bootstrap CSS File -->
+  <link href="{{ url_for('static', filename='web/lib/bootstrap/css/bootstrap.css') }}" rel="stylesheet">
+
+  <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">-->
+
+  <link href="{{ url_for('static', filename='web/css/style.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename='web/css/style_web.css') }}" rel="stylesheet">
+
+  <!-- Libraries & Bootstrap JS File -->
+  <script src="{{ url_for('static', filename='web/lib/jquery/jquery.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='web/lib/bootstrap/js/bootstrap.min.js') }}"></script>
+
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>-->
+  <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>-->
+
+</head>
+
+<body>
+
+  <!--==========================
+  Header
+  ============================-->
+  <header id="header" class="fixed-top">
+    <div class="container">
+
+      <div class="logo float-left">
+        <a href="{{ url_for('index') }}" class="scrollto"><img src="{{ url_for('static', filename='web/img/logo.svg') }}" alt=""></a>
+      </div>
+
+      <nav class="main-nav float-right d-none d-lg-block">
+        <ul style="list-style: none;">
+          <li class="subnav"><a href="#intro">SOLUCIONES</a>
+            <div class="subnav-content" style="margin-left: calc((1350% - 200vw) / 2);">
+              <div style="margin-left: 35%;display: flex;">
+                <div>
+                  <a href="#bring" class="a-subnav">Aged Care</a>
+                  <a href="#deliver" class="a-subnav">Rural Health</a>
+                  <a href="#package"class="a-subnav">Prison Health</a>
+                  <a href="#express" class="a-subnav">Remote Health</a>
+                </div>
+                <div style="padding-left: 5%;">
+                  <a href="#bring" class="a-subnav">Mining, Oil &#038; Gas</a>
+                  <a href="#deliver" class="a-subnav">Rural Health</a>
+                  <a href="#package" class="a-subnav">General Practice</a>
+                  <a href="#express"class="a-subnav">Merchant Navy</a>
+                </div>
+              </div>
+            </div>
+          </li>
+          
+          <li class="subnav"><a  href="#about">PRODUCTOS</a>
+            <div class="subnav-content" style="margin-left: calc((1170% - 200vw) / 2);">
+              <div style="margin-left: 35%;display: flex;">
+                <div>
+                  <a href="#bring" class="a-subnav">General Practice</a>
+                  <a href="#deliver" class="a-subnav">Rural Health</a>
+                  <a href="#package"class="a-subnav">Rural Health</a>
+                  <a href="#express" class="a-subnav">Merchant Navy</a>
+                </div>
+                <div style="padding-left: 5%;">
+                  <a href="#bring" class="a-subnav">Aged Care</a>
+                  <a href="#deliver" class="a-subnav">Rural Health</a>
+                  <a href="#package"class="a-subnav">Prison Health</a>
+                  <a href="#express" class="a-subnav">Remote Health</a>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li class="subnav"><a href="#services">NOSOTROS</a>
+          </li>
+
+          <li><a href="#portfolio">CONTACTO</a></li>
+          <li><a href="">|</a></li>
+          <li class="drop-down"><a href=""> <img src="{{ url_for('static', filename='web/img/header/gps.svg') }}" /> </a>
+            <ul>
+              <li><a href="#">LATAM</a></li>
+              <li><a href="#">DEUSTECH</a></li>
+              <li><a href="#">ENGLISH</a></li>
+            </ul>
+          </li>
+          <li><a href="#contact"><img src="{{ url_for('static', filename='web/img/header/whatsapp.svg') }}" /> </a></li>
+        </ul>
+      </nav><!-- .main-nav -->
+
+    </div>
+  </header><!-- #header -->
+
+ 
+  <!--==========================
+      About Us Section
+    ============================-->
+  <section id="aboutus">
+    <div class="container">
+      <header class="section-header">
+        <h3>NOSOTROS</h3>
+        <hr color="#28C66F" />
+      </header>
+      <div>
+        <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut consectetur tellus vel condimentum 
+          finibus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Morbi et vestibulum
+           elit. Nunc tempus nulla felis, nec congue sem finibus a. Proin a urna id lacus blandit elementum. Cras varius tempus
+            tellus, ut finibus lorem gravida vel. Pellentesque sagittis, turpis molestie pharetra eleifend, leo arcu placerat
+             tortor, quis pulvinar tortor massa et odio. Donec elementum eget quam cursus molestie. Suspendisse mattis cursus
+              aliquam. Nunc finibus eget lacus vitae molestie.</p>
+        <p class="description">Sed sagittis ligula eget congue luctus. Sed fermentum semper neque, vel molestie erat porta nec.
+           Suspendisse commodo, tellus id viverra convallis, mi lacus lobortis arcu, ut placerat nulla metus a ante. Integer euismod 
+           pellentesque fermentum. Phasellus a elit porttitor diam tincidunt varius. Maecenas auctor ornare orci, dignissim maximus 
+           tellus dignissim sed. Etiam mollis ut purus quis convallis. Curabitur eros arcu, faucibus vel ante et, tincidunt consequat
+            augue. Suspendisse potenti. Morbi non dapibus elit, ut tincidunt nulla.</p>
+      </div>
+  </section><!-- #about -->
+  <di>
+    <img src="{{ url_for('static', filename='web/img/aboutus/back_ground.png') }}" style="width:100%"/> 
+  </di>
+  <section id="phrase">
+    <p class="description">“Sed venenatis elit pellentesque, <br>
+      pharetra eros nec, mattis libero. <br>
+      Pellentesque pharetra”</p>
+  </section>
+
+
+  <!--==========================
+      Tutors  Section
+    ============================-->
+  <section id="tutors">
+    <div class="container">
+      <header class="section-header">
+        <h3>ASESORES</h3>
+        <hr color="#28C66F" />
+      </header>
+  
+  
+      <div class="row">
+  
+        <div class="box">
+          <img src="{{ url_for('static', filename='web/img/tutors/img_1.png') }}">
+          <p class="description-1">Julio Guillen</p>
+          <p class="description-2">CEO</p>
+        </div>
+
+        <div class="box">
+          <img src="{{ url_for('static', filename='web/img/tutors/img_2.png') }}">
+          <p class="description-1">Julio Guillen</p>
+          <p class="description-2">Gerente</p>
+        </div>
+  
+        <div class="box">
+          <img src="{{ url_for('static', filename='web/img/tutors/img_1.png') }}">
+          <p class="description-1">Julio Guillen</p>
+          <p class="description-2">Director</p>
+        </div>
+  
+        <div class="box">
+          <img src="{{ url_for('static', filename='web/img/tutors/img_4.png') }}">
+          <p class="description-1">Julio Guillen</p>
+          <p class="description-2">Dr. Asesor</p>
+        </div>
+  
+        <div class="box">
+          <img src="{{ url_for('static', filename='web/img/tutors/img_2.png') }}">
+          <p class="description-1">Julio Guillen</p>
+          <p class="description-2">Dr. Asesor</p>
+        </div>
+  
+      </div>
+  
+  
+    </div>
+  </section><!-- #customers -->
+
+  <!--==========================
+    Footer
+  ============================-->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 footer-info">
+            <img src="{{ url_for('static', filename='web/img/logo.svg') }}" alt="">
+
+            <div class="social-links">
+              <a href="#" class="facebook"></a>
+              <a href="#" class="youtube"></a>
+              <a href="#" class="twitter"></a>
+              <a href="#" class="instagram"></a>
+
+            </div>
+
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-contact">
+
+            <p>
+              A108 Adam Street <br>
+              New York, NY 535022<br>
+              <br>
+              <strong>Phone:</strong> +1 5589 55488 55<br>
+              <strong>Email:</strong> info@example.com<br>
+            </p>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <p>
+              A108 Adam Street <br>
+              New York, NY 535022<br>
+              <br>
+              <strong>Phone:</strong> +1 5589 55488 55<br>
+              <strong>Email:</strong> info@example.com<br>
+            </p>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <p>
+              A108 Adam Street <br>
+              New York, NY 535022<br>
+              <br>
+              <strong>Phone:</strong> +1 5589 55488 55<br>
+              <strong>Email:</strong> info@example.com<br>
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </footer><!-- #footer -->
+
+</body>
+
+</html>
